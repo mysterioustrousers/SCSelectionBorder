@@ -94,13 +94,6 @@ const CGFloat SCSelectionBorderHandleHalfWidth = 10.0f / 2.0f;
     [self setColors:[NSColor highlightColor]];
 }
 
-- (void)dealloc
-{
-    [_borderColor release], _borderColor = nil;
-    [_fillColor release], _fillColor = nil;
-    [super dealloc];
-}
-
 - (void)setColors:(NSColor *)aColor
 {
     self.borderColor = aColor;
