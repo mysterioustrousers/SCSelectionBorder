@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
   s.source       = { :git => "https://github.com/mysterioustrousers/SCSelctionBorder.git", :tag => "#{s.version}" }
   s.source_files = 'SCSelectionBorder.{h,m}'
+  s.requires_arc = true
 end
 
